@@ -13,6 +13,7 @@
    # Code thực hiện
    python src/text_processing/process_data.py
    ```
+2. Xử lý dữ liệu
    Tiếp tục đọc file content.csv được tạo ra ở bước trên. Em thấy rằng
    - Categories được ký hiệu bởi các chữ cái, ví dụ  "b": "business", "t": "science and technology", "e": "entertainment", "m": "health" nên vì vậy em sẽ tạo 1 dictionary để map các ký tự với label tương ứng
    labelmap = {"b": "business", "t": "science and technology", "e": "entertainment", "m": "health"}
@@ -26,8 +27,15 @@
    # Code thực hiện
    python src/text_processing/prepare_data.py
    ```
-   Kết quả
-   ![image](https://github.com/user-attachments/assets/f5583bee-735e-4cee-9a45-2659e3238be1)
-   C
-3. 
-4. 
+   Kết quả                       
+   ![image](https://github.com/user-attachments/assets/f5583bee-735e-4cee-9a45-2659e3238be1)                        
+3. Khám phá dữ liệu
+   Thống kê số lượng label của 3 tập train/valid/test. Dưới đây là kết quả phân tích                
+   ![image](https://github.com/user-attachments/assets/6c454af0-0043-44dc-b4d1-42b31317f069)                   
+                         
+   Thống kê số lượng từ min/max/average
+   ![image](https://github.com/user-attachments/assets/6243abc6-0e72-4126-a876-924b13a8605c)              
+
+   
+
+5. 
