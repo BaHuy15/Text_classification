@@ -20,15 +20,14 @@
    - Tạo một list rỗng để thêm (title, category)
    - Xáo trộn danh sách một cách ngẫu nhiên
    - Chia thành tập dữ liệu train/valid/test theo tỉ lệ 80/10/10
-   - Lưu thành file train.txt, valid.txt, test.txt
+   - Lưu thành file train.txt, valid.txt, test.txt và train.csv valid.csv test.csv
    Code thực hiện
    ```shell
    # Code thực hiện
    python src/text_processing/prepare_data.py
    ```
-   Kết quả 
-   
-   
+   Kết quả
+   ![image](https://github.com/user-attachments/assets/f5583bee-735e-4cee-9a45-2659e3238be1)
    C
 3. 
 4. 
