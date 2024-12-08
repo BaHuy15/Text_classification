@@ -1,6 +1,6 @@
 #  Xây dựng mô hình phân loại văn bản và triển khai thành API
 
-1. Chuẩn bị dữ liệu
+## 1. Chuẩn bị dữ liệu
    - Tải dữ liệu News Aggregator Data Set về máy.
    - Xử lý dữ liệu
      Sau khi kiểm tra dữ liệu trên, em thấy rằng các cột chứa nhiều giá trị NaN ( ô trống). Nên em sẽ fill giá trị NaN bằng string "empty" hoặc khoảng trắng sau đó tạo một cột example để join
@@ -13,7 +13,7 @@
    # Code thực hiện
    python src/text_processing/process_data.py
    ```
-2. Xử lý dữ liệu
+## 2. Xử lý dữ liệu
    Tiếp tục đọc file content.csv được tạo ra ở bước trên. Em thấy rằng
    - Categories được ký hiệu bởi các chữ cái, ví dụ  "b": "business", "t": "science and technology", "e": "entertainment", "m": "health" nên vì vậy em sẽ tạo 1 dictionary để map các ký tự với label tương ứng
    labelmap = {"b": "business", "t": "science and technology", "e": "entertainment", "m": "health"}
@@ -30,7 +30,7 @@
    Kết quả                       
    ![image](https://github.com/user-attachments/assets/f5583bee-735e-4cee-9a45-2659e3238be1)
                           
-4. Khám phá dữ liệu
+## 4. Khám phá dữ liệu
    Thống kê số lượng label của 3 tập train/valid/test. Dưới đây là kết quả phân tích                
    ![image](https://github.com/user-attachments/assets/6c454af0-0043-44dc-b4d1-42b31317f069)                   
                          
@@ -42,12 +42,12 @@
    python src/text_processing/analyze_data.py
    ```
 
-5. Phân tích và lựa chọn mô hình
+## 5. Phân tích và lựa chọn mô hình
    + Tài nguyên sử dụng: CPU
    + Lựa chọn mô hình: Sử dụng pretrained model mistral
    + Tools : Unsloth để tăng tốc độ training và inference và có hỗ trợ chuyển đổi mô hình sang định dạng GGUF để xài trên máy local
      
-6. Finetune mô hình
+## 6. Finetune mô hình
     Code thực hiện
     ```shell
    # Code thực hiện
@@ -89,7 +89,7 @@
    Macro avg: Precision, recall, và F1-score lần lượt là 0.71, 0.14, và 0.22. Điều này cho thấy mô hình không đồng đều giữa các nhãn, vì các nhãn có ít mẫu được ưu tiên thấp hơn.
    Weighted avg: Được tính dựa trên số lượng mẫu trong từng nhãn. Với precision là 0.87, nhưng recall và F1-score đều thấp, điều này chứng minh rằng mô hình có thể dự đoán đúng một số nhãn phổ biến hơn nhưng thất bại trong việc tái hiện các nhãn ít phổ biến.
 
-9. Ý tưởng  cải thiện 
+## 8. Ý tưởng  cải thiện 
 
 8.1. Xử lý dữ liệu mất cân bằng:
 
