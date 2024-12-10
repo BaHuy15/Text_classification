@@ -21,7 +21,7 @@
    - Tạo một list rỗng để thêm (title, category)
    - Xáo trộn danh sách một cách ngẫu nhiên
    - Chia thành tập dữ liệu train/valid/test theo tỉ lệ 80/10/10
-   - Lưu thành file train.txt, valid.txt, test.txt và train.csv valid.csv test.csv
+   - Lưu thành file train.txt, valid.txt, test.txt và train.csv valid.csv test.csv                 
    Code thực hiện
    ```shell
    # Code thực hiện
