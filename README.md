@@ -105,9 +105,13 @@ Kiểm tra và tiền xử lý dữ liệu:
 Loại bỏ các mẫu nhiễu hoặc không liên quan trong dữ liệu.
       
 8.4. Thử các mô hình khác:
-Sử dụng các mô hình mạnh hơn (e.g., BERT, RoBERTa) hoặc tinh chỉnh mô hình hiện tại để đạt hiệu suất tốt hơn.
-    
-9. Triển khai mô hình thành API
+Sử dụng các mô hình (e.g., BERT, RoBERTa) hoặc tinh chỉnh mô hình hiện tại để đạt hiệu suất tốt hơn.
+
+8.5. Kết quả cải thiện khi sử dụng BERT
+Link train/test : https://colab.research.google.com/drive/1mP1sUhK0l6qQpdNsmcDVVjPp0EGkULjK?usp=sharing                          
+![image](https://github.com/user-attachments/assets/dc846450-42f6-40e1-84a6-bb4c0446db95)  
+
+## 9. Triển khai mô hình thành API
    - Download mô hình từ huggingface và lưu file model vào thư mục model
    - Sử dụng Fastapi để triển khai microservice
    
